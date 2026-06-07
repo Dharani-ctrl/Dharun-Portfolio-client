@@ -110,17 +110,17 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="#" className="hover:text-accent transition-colors">
+                <Link href="/privacy-policy" className="hover:text-accent transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-accent transition-colors">
+                <Link href="/terms-of-service" className="hover:text-accent transition-colors">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-accent transition-colors">
+                <Link href="/cookie-policy" className="hover:text-accent transition-colors">
                   Cookie Policy
                 </Link>
               </li>
@@ -128,8 +128,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Vidzby.Dharun. All rights reserved.</p>
+          <p className="flex items-center gap-1">
+            Developed by <span className="text-foreground font-semibold">Dharani Dharan</span>
+          </p>
         </div>
       </div>
     </footer>
